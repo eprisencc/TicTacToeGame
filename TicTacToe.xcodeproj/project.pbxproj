@@ -12,6 +12,7 @@
 		DD3AC2791F2E88C0001C6A0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3AC2771F2E88C0001C6A0B /* Main.storyboard */; };
 		DD3AC27B1F2E88C0001C6A0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD3AC27A1F2E88C0001C6A0B /* Assets.xcassets */; };
 		DD3AC27E1F2E88C0001C6A0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3AC27C1F2E88C0001C6A0B /* LaunchScreen.storyboard */; };
+		DDA492AA1F2EA7B400E6C439 /* TicTacToeLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA492A91F2EA7B400E6C439 /* TicTacToeLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DD3AC27A1F2E88C0001C6A0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD3AC27D1F2E88C0001C6A0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD3AC27F1F2E88C0001C6A0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDA492A91F2EA7B400E6C439 /* TicTacToeLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		DD3AC2721F2E88C0001C6A0B /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
-				DD3AC2731F2E88C0001C6A0B /* AppDelegate.swift */,
+				DDA492A81F2EA78100E6C439 /* Supporting Files */,
 				DD3AC2751F2E88C0001C6A0B /* ViewController.swift */,
 				DD3AC2771F2E88C0001C6A0B /* Main.storyboard */,
+				DDA492A91F2EA7B400E6C439 /* TicTacToeLogic.swift */,
+			);
+			path = TicTacToe;
+			sourceTree = "<group>";
+		};
+		DDA492A81F2EA78100E6C439 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD3AC2731F2E88C0001C6A0B /* AppDelegate.swift */,
 				DD3AC27A1F2E88C0001C6A0B /* Assets.xcassets */,
 				DD3AC27C1F2E88C0001C6A0B /* LaunchScreen.storyboard */,
 				DD3AC27F1F2E88C0001C6A0B /* Info.plist */,
 			);
-			path = TicTacToe;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD3AC2761F2E88C0001C6A0B /* ViewController.swift in Sources */,
+				DDA492AA1F2EA7B400E6C439 /* TicTacToeLogic.swift in Sources */,
 				DD3AC2741F2E88C0001C6A0B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +316,7 @@
 				DD3AC2841F2E88C0001C6A0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
