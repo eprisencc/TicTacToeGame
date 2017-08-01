@@ -13,6 +13,7 @@
 		DD3AC27B1F2E88C0001C6A0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD3AC27A1F2E88C0001C6A0B /* Assets.xcassets */; };
 		DD3AC27E1F2E88C0001C6A0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD3AC27C1F2E88C0001C6A0B /* LaunchScreen.storyboard */; };
 		DDA492AA1F2EA7B400E6C439 /* TicTacToeLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA492A91F2EA7B400E6C439 /* TicTacToeLogic.swift */; };
+		DDA492AC1F2EF8FE00E6C439 /* LineWhenTicTacToeWins.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA492AB1F2EF8FE00E6C439 /* LineWhenTicTacToeWins.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DD3AC27D1F2E88C0001C6A0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD3AC27F1F2E88C0001C6A0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDA492A91F2EA7B400E6C439 /* TicTacToeLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeLogic.swift; sourceTree = "<group>"; };
+		DDA492AB1F2EF8FE00E6C439 /* LineWhenTicTacToeWins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineWhenTicTacToeWins.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				DD3AC2751F2E88C0001C6A0B /* ViewController.swift */,
 				DD3AC2771F2E88C0001C6A0B /* Main.storyboard */,
 				DDA492A91F2EA7B400E6C439 /* TicTacToeLogic.swift */,
+				DDA492AB1F2EF8FE00E6C439 /* LineWhenTicTacToeWins.swift */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD3AC2761F2E88C0001C6A0B /* ViewController.swift in Sources */,
+				DDA492AC1F2EF8FE00E6C439 /* LineWhenTicTacToeWins.swift in Sources */,
 				DDA492AA1F2EA7B400E6C439 /* TicTacToeLogic.swift in Sources */,
 				DD3AC2741F2E88C0001C6A0B /* AppDelegate.swift in Sources */,
 			);
