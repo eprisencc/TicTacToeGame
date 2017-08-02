@@ -83,8 +83,6 @@ class LineWhenTicTacToeWins: UIView {
     
     override func draw(_ rect: CGRect) {
         UIColor.red.set()
-        /*let path = UIBezierPath(rect: CGRect(x: 0, y: 0, width: bounds.size.width, height: bounds.size.height))
-        path.stroke()*/
         pathforDrawWinner().stroke()
     }
 

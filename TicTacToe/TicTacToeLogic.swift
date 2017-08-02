@@ -8,12 +8,6 @@
 
 import Foundation
 
-enum CrossOrCircle {
-    case cross
-    case circle
-    case freeSpace
-}
-
 enum DidSomeoneWin {
     case crossWins
     case circleWins
