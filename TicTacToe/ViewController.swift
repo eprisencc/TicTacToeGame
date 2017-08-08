@@ -81,30 +81,33 @@ class ViewController: UIViewController {
     @IBAction func pressedMoveBtn(_ sender: UIButton) {
         if gameStarted {
             if player1Turn {
-                game.setPosition(playerType: player1, position: sender.tag)
-                sender.setTitle(player1, for: .normal)
-                /*if player1 == "X" {
-                   sender.setTitleColor(UIColor.red, for: .normal)
+                // Disallow illegal moves like changing a space already occupied by a player
+                if (sender.currentTitle == player1) || (sender.currentTitle == player2) {
+                    player1Turn = true
+                    gameStatusDisplay.text = "Invalid move.  Try again player 1."
                 }
                 else {
-                   sender.setTitleColor(UIColor.blue, for: .normal)
-                }*/
-                
-                player1Turn = false
-                gameStatusDisplay.text = "Player 2 make your move."
+                    game.setPosition(playerType: player1, position: sender.tag)
+                    sender.setTitle(player1, for: .normal)
+                    
+                    player1Turn = false
+                    gameStatusDisplay.text = "Player 2 make your move."
+                }
             }
             else {
-                game.setPosition(playerType: player2, position: sender.tag)
-                sender.setTitle(player2, for: .normal)
-                /*if player2 == "X" {
-                    sender.setTitleColor(UIColor.red, for: .normal)
+                // Disallow illegal moves like changing a space already occupied by a player
+                if (sender.currentTitle == player1) || (sender.currentTitle == player2) {
+                    player1Turn = false
+                    gameStatusDisplay.text = "Invalid move.  Try again player 2."
                 }
                 else {
-                    sender.setTitleColor(UIColor.blue, for: .normal)
-                }*/
-                
-                player1Turn = true
-                gameStatusDisplay.text = "Player 1 make your move."
+                    game.setPosition(playerType: player2, position: sender.tag)
+                    sender.setTitle(player2, for: .normal)
+                    
+                    player1Turn = true
+                    gameStatusDisplay.text = "Player 1 make your move."
+                }
+
             }
             numberOfMoves += 1
             
@@ -120,6 +123,7 @@ class ViewController: UIViewController {
                         gameStatusDisplay.text = "Player 2 wins!!!"
                     }
                     
+                    // Turn winning symbol red and draw a line through the winning selection
                     buttonsOnTheBoard![didSomeoneWin.winningPosition1 - 1].setTitleColor(UIColor.red, for: .normal)
                     buttonsOnTheBoard![didSomeoneWin.winningPosition2 - 1].setTitleColor(UIColor.red, for: .normal)
                     buttonsOnTheBoard![didSomeoneWin.winningPosition3 - 1].setTitleColor(UIColor.red, for: .normal)
@@ -135,6 +139,7 @@ class ViewController: UIViewController {
                         gameStatusDisplay.text = "Player 2 wins!!!"
                     }
                     
+                    // Turn winning symbol red and draw a line through the winning selection
                     buttonsOnTheBoard![didSomeoneWin.winningPosition1 - 1].setTitleColor(UIColor.blue, for: .normal)
                     buttonsOnTheBoard![didSomeoneWin.winningPosition2 - 1].setTitleColor(UIColor.blue, for: .normal)
                     buttonsOnTheBoard![didSomeoneWin.winningPosition3 - 1].setTitleColor(UIColor.blue, for: .normal)
